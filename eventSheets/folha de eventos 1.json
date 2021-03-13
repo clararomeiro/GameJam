@@ -1,5 +1,133 @@
 {
 	"name": "Folha de eventos 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "GUI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 259562912064133
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TelaTutorial",
+							"sid": 155888192126219,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 293956969843096
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 459791461140573,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Play"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Play",
+							"sid": 790987113945083,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 515039827460244,
+							"parameters": {
+								"layout": "inicioJogo"
+							}
+						}
+					],
+					"sid": 865702756857382
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 128914319744170,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Tutorial"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TelaTutorial",
+							"sid": 202763593798576,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Logo",
+							"sid": 851754416862767,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Tutorial",
+							"sid": 550307579683061
+						}
+					],
+					"sid": 362981457351145
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 313614498723990,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Exit"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "close",
+							"objectClass": "Navegador",
+							"sid": 822371973396653
+						}
+					],
+					"sid": 880888346659215
+				}
+			],
+			"sid": 376787227321631
+		}
+	],
 	"sid": 213264623379882
 }

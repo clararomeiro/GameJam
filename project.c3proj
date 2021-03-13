@@ -13,6 +13,30 @@
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Navegador",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Fundo em blocos",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
 		}
 	],
 	"uniqueId": "5xpg9mq5lkh",
@@ -20,7 +44,15 @@
 		"items": [
 			"Raposa2",
 			"Background",
-			"Raposa1"
+			"Raposa1",
+			"Mouse",
+			"Navegador",
+			"FundoEmBlocos",
+			"Play",
+			"Tutorial",
+			"Exit",
+			"Logo",
+			"TelaTutorial"
 		],
 		"subfolders": []
 	},

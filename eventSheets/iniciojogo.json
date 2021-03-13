@@ -30,6 +30,26 @@
 								"variable": "BackgroundInfinito",
 								"value": "4"
 							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "GameplayMusic",
+							"sid": 267503302266555,
+							"parameters": {
+								"folder": "music",
+								"audio-file-name": "\"GamePlay-song_2\"",
+								"loop": "looping",
+								"volume": "-10",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Raposa1",
+							"sid": 444936731944364,
+							"parameters": {
+								"state": "flipped"
+							}
 						}
 					],
 					"sid": 743045767540125
@@ -83,6 +103,56 @@
 						}
 					],
 					"sid": 742891005141543
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 786292475873022,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Raposa2",
+							"sid": 531061244928488,
+							"parameters": {
+								"animation": "\"pular\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 554962667882274
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Raposa1",
+							"sid": 441616231797061,
+							"parameters": {
+								"animation": "\"pular\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Raposa2",
+							"sid": 264350023758219,
+							"parameters": {
+								"animation": "\"correr\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 758540408665023
 				}
 			],
 			"sid": 611723595232694

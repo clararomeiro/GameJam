@@ -10,6 +10,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 418284615507968
+		},
+		{
+			"eventType": "variable",
+			"name": "pulando",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "verifica se está pulando",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 866823729132095
 		}
 	],
 	"sid": 535582966320552

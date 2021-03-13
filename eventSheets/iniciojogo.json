@@ -1,0 +1,92 @@
+{
+	"name": "inicioJogo",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Movimentação do Background",
+			"description": "velocidade, continuidade, etc",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Ações que iniciam a cena"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 697707227519756
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 940522631670122,
+							"parameters": {
+								"variable": "BackgroundInfinito",
+								"value": "4"
+							}
+						}
+					],
+					"sid": 743045767540125
+				},
+				{
+					"eventType": "comment",
+					"text": "Movimentando o bg"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 292519954008808
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Background",
+							"sid": 913679850813582,
+							"parameters": {
+								"x": "Self.X-BackgroundInfinito"
+							}
+						}
+					],
+					"sid": 740469169591969
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Background",
+							"sid": 474655126558142,
+							"parameters": {
+								"comparison": 3,
+								"x-co-ordinate": "-Self.Width"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Background",
+							"sid": 559444114888400,
+							"parameters": {
+								"x": "Self.Width"
+							}
+						}
+					],
+					"sid": 742891005141543
+				}
+			],
+			"sid": 611723595232694
+		}
+	],
+	"sid": 462401966811963
+}

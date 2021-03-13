@@ -1,0 +1,16 @@
+{
+	"name": "Variaveis",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "BackgroundInfinito",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "Movimentando a imagem de fundo",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 418284615507968
+		}
+	],
+	"sid": 535582966320552
+}

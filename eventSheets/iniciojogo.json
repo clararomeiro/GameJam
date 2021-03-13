@@ -30,6 +30,13 @@
 								"variable": "BackgroundInfinito",
 								"value": "4"
 							}
+						},
+						{
+							"callFunction": "FadeIn",
+							"sid": 103455728653482,
+							"parameters": [
+								"1"
+							]
 						}
 					],
 					"sid": 743045767540125
@@ -86,6 +93,106 @@
 				}
 			],
 			"sid": 611723595232694
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Fade",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "FadeIn",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "fadeTime",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 253003583248439
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Fade",
+							"sid": 106955324186233,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Fade",
+							"sid": 652280462876761,
+							"behaviorType": "Interpolação",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "fadeTime",
+								"ease": "noease",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 656689784158901
+				},
+				{
+					"functionName": "FadeOut",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "fadeTime",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 885466682401577
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Fade",
+							"sid": 455471244652368,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Fade",
+							"sid": 722671405306917,
+							"behaviorType": "Interpolação",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetOpacity",
+								"end-value": "100",
+								"time": "fadeTime",
+								"ease": "noease",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 505426242184439
+				}
+			],
+			"sid": 273101460874871
 		}
 	],
 	"sid": 462401966811963

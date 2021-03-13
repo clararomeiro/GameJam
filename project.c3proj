@@ -37,6 +37,14 @@
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Interpolação",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
 		}
 	],
 	"uniqueId": "5xpg9mq5lkh",
@@ -52,7 +60,9 @@
 			"Tutorial",
 			"Exit",
 			"Logo",
-			"TelaTutorial"
+			"TelaTutorial",
+			"Fade",
+			"FundoEmBlocos2"
 		],
 		"subfolders": []
 	},

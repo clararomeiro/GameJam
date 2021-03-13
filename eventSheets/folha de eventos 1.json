@@ -10,6 +10,12 @@
 			"children": [
 				{
 					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 209687724960595
+				},
+				{
+					"eventType": "block",
 					"conditions": [
 						{
 							"id": "on-start-of-layout",
@@ -45,17 +51,9 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation-frame",
-							"objectClass": "Play",
-							"sid": 790987113945083,
-							"parameters": {
-								"frame-number": "1"
-							}
-						},
-						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 515039827460244,
+							"sid": 678036904441737,
 							"parameters": {
 								"layout": "inicioJogo"
 							}

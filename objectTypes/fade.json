@@ -1,0 +1,26 @@
+{
+	"name": "Fade",
+	"plugin-id": "TiledBg",
+	"sid": 610648334959930,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Interpolação",
+			"sid": 556976578371132
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5190604,
+		"useCollisionPoly": true
+	}
+}

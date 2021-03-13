@@ -10,6 +10,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 418284615507968
+		},
+		{
+			"eventType": "variable",
+			"name": "movimentoDoChao",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "Movimentando o chão ",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 155343825250746
 		}
 	],
 	"sid": 535582966320552

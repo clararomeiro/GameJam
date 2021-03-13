@@ -1,10 +1,16 @@
 {
-	"name": "Raposa1",
+	"name": "Raposa3",
 	"plugin-id": "Sprite",
-	"sid": 193271656060150,
+	"sid": 869899237802697,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Plataforma",
+			"sid": 133334445535119
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,15 +24,15 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1480977,
+						"imageSpriteId": 7524808,
 						"collisionPoly": {
 							"points": [
-								0.020157756354075372,
-								0.029601029601029602,
+								0.02015775635407535,
+								0.029601029601029616,
 								0.5,
 								0.41055341055341055,
 								0.9106047326906223,
-								0.12998712998713,
+								0.12998712998713002,
 								0.9500438212094654,
 								0.5,
 								0.8080631025416302,
@@ -43,7 +49,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 994246982611351,
+				"sid": 538055266611414,
 				"name": "Raposa1",
 				"isLooping": false,
 				"isPingPong": false,

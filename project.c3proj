@@ -13,6 +13,22 @@
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Fundo em blocos",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Plataforma",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
 		}
 	],
 	"uniqueId": "5xpg9mq5lkh",
@@ -20,7 +36,11 @@
 		"items": [
 			"Raposa2",
 			"Background",
-			"Raposa1"
+			"Raposa3",
+			"FundoEmBlocos",
+			"FundoEmBlocos2",
+			"Ground",
+			"chão"
 		],
 		"subfolders": []
 	},
@@ -158,6 +178,11 @@
 							"name": "bg_sketch.png",
 							"type": "image/png",
 							"sid": 566316259074121
+						},
+						{
+							"name": "bg_ofc.png",
+							"type": "image/png",
+							"sid": 620546404051488
 						}
 					],
 					"subfolders": [],

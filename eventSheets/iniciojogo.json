@@ -2,38 +2,47 @@
 	"name": "inicioJogo",
 	"events": [
 		{
+			"eventType": "comment",
+			"text": "Ações que iniciam a cena"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 664220288268956
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 361799864381855,
+					"parameters": {
+						"variable": "BackgroundInfinito",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 518431313529292,
+					"parameters": {
+						"variable": "movimentoDoChao",
+						"value": "4"
+					}
+				}
+			],
+			"sid": 287595494648724
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Movimentação do Background",
 			"description": "velocidade, continuidade, etc",
 			"isActiveOnStart": true,
 			"children": [
-				{
-					"eventType": "comment",
-					"text": "Ações que iniciam a cena"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 697707227519756
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 940522631670122,
-							"parameters": {
-								"variable": "BackgroundInfinito",
-								"value": "4"
-							}
-						}
-					],
-					"sid": 743045767540125
-				},
 				{
 					"eventType": "comment",
 					"text": "Movimentando o bg"
@@ -86,6 +95,66 @@
 				}
 			],
 			"sid": 611723595232694
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Movimentação do chão",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Movimenta o chão de acordo com o avançar do jogo"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 362829277215382
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "chão",
+							"sid": 616890565270277,
+							"parameters": {
+								"x": "Self.X-4"
+							}
+						}
+					],
+					"sid": 850170709365336
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "chão",
+							"sid": 513327817357725,
+							"parameters": {
+								"comparison": 3,
+								"x-co-ordinate": "-Self.Width"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "chão",
+							"sid": 797066293070970,
+							"parameters": {
+								"x": "Self.Width"
+							}
+						}
+					],
+					"sid": 689528208461420
+				}
+			],
+			"sid": 873445190812183
 		}
 	],
 	"sid": 462401966811963
